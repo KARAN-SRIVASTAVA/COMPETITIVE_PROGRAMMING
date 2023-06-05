@@ -1,5 +1,7 @@
 // IT IS ONE OF THE MULTIPLE TOPOSORT --> u appears before v
 // Valid Only If Graph is DAG(Directed Acyclic Graph)
+#include <bits/stdc++.h> 
+using namespace std;
 void dfs(int node,vector<int> &vis,vector<int>&ans,vector<int>adj[]){
 	    vis[node] = 1;
 	    ans.push_back(node);

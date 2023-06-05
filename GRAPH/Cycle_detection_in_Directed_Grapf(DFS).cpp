@@ -1,3 +1,5 @@
+#include <bits/stdc++.h> 
+using namespace std;
 bool dfs(int node,vector<int>&vis,vector<int>&pathvis,
     vector<int>adj[]){
         vis[node] = 1;
