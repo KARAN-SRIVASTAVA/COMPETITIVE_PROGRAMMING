@@ -20,7 +20,7 @@ int f(int i,vector<int> &a,int tar,vector<vector<int>>&dp){
     int a2 = 0;
     if(a[i]<=tar)
       a2 = f(i-1,a,tar-a[i],dp);
-    return dp[i][tar] = a1+a2;
+    return dp[i][tar] = (a1+a2);
 }
 int tab(int n,vector<int> &a,int tar){
     vector<vector<int>>dp(n,vector<int>(tar+1,0));
@@ -36,6 +36,7 @@ int tab(int n,vector<int> &a,int tar){
             dp[i][j] = dp[i-1][j];
             if(a[i]<=j)
             dp[i][j]+=dp[i-1][j-a[i]];
+            dp[i][j];
         }     
     }
     // print(dp);
@@ -56,6 +57,7 @@ int Opt(int n,vector<int> &a,int tar){
             curr[j] = prev[j];
             if(a[i]<=j)
             curr[j]+=prev[j-a[i]];
+            curr[j];
         }  
         prev = curr;   
     }
@@ -68,4 +70,14 @@ int findWays(vector<int> &num, int tar)
     // return f(n-1,num,tar,dp);
     // return tab(n,num,tar);
     return Opt(n,num,tar);
+}
+int countPartitions(int n, int d, vector<int> &arr) {
+    int sum = 0;
+    for(int i=0;i<n;i++) sum+=arr[i];
+    if((sum<d) || (sum-d)&1) return 0;
+    return findWays(arr,(sum-d)/2);
+}
+int targetSum(int n, int target, vector<int>& arr) {
+    // s1-s2 = d;
+    return countPartitions(n,target,arr);
 }
