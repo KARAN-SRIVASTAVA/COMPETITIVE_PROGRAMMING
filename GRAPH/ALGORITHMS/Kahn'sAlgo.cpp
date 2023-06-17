@@ -30,17 +30,3 @@ vector<int> topoSort(int V, vector<int> adj[])
 
 	return toposort;
 }
-vector<int> eventualSafeNodes(int V, vector<int> adj[])
-{
-	vector<int> adjrev[V];
-
-	for (int i = 0; i < V; i++)
-		for (auto it : adj[i])
-			adjrev[it].push_back(i);
-
-	vector<int> ans = topoSort(V, adjrev);
-
-	sort(ans.begin(), ans.end());
-
-	return ans;
-}

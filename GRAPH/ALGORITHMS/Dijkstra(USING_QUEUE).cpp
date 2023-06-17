@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 #define pll pair<int, int>
 vector<int> dijkstra(int V, vector<vector<int>> adj[], int S)
