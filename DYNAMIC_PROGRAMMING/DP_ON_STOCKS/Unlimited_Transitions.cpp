@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-long f(long *a, int n, long ind, long id, vector<vector<long>> &dp)
+int f(vector<int> &a, int n, int ind, int id, vector<vector<int>> &dp)
 {
     if (ind >= n)
         return 0;
@@ -11,9 +11,9 @@ long f(long *a, int n, long ind, long id, vector<vector<long>> &dp)
     else
         return dp[ind][id] = max(a[ind] + f(a, n, ind + 1, 0, dp), f(a, n, ind + 1, 1, dp));
 }
-long tab(long *a, int n)
+int tab(vector<int> &a, int n)
 {
-    vector<vector<long>> dp(n + 1, vector<long>(2, 0));
+    vector<vector<int>> dp(n + 1, vector<int>(2, 0));
     for (int i = n - 1; i >= 0; i--)
     {
         for (int j = 0; j < 2; j++)
@@ -26,12 +26,12 @@ long tab(long *a, int n)
     }
     return dp[0][0];
 }
-long Opt(long *a, int n)
+int Opt(vector<int> &a, int n)
 {
-    vector<long> next(2, 0);
+    vector<int> next(2, 0);
     for (int i = n - 1; i >= 0; i--)
     {
-        vector<long> curr(2, 0);
+        vector<int> curr(2, 0);
         for (int j = 0; j < 2; j++)
         {
             if (j == 0)
@@ -44,9 +44,9 @@ long Opt(long *a, int n)
     }
     return next[0];
 }
-long getMaximumProfit(long *values, int n)
+int getMaximumProfit(vector<int> &values, int n)
 {
-    // vector<vector<long>>dp(n,vector<long>(2,-1));
+    // vector<vector<int>>dp(n,vector<int>(2,-1));
     // return f(values,n,0,0,dp);
     // return tab(values,n);
     return Opt(values, n);
