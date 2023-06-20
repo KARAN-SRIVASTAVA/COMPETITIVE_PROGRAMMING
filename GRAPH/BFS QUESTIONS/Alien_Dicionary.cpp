@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution
-{
+{ 
 public:
     vector<int> topoSort(int V, vector<int> adj[])
     {

@@ -72,4 +72,4 @@ int numProvinces(vector<vector<int>> adj, int V)
             cnt++;
 
     return cnt;
-}
+} 

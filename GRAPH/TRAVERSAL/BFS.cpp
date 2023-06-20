@@ -22,7 +22,7 @@ void bfs(int node, vector<int> &vis, vector<int> adj[], vector<int> &bfs)
 }
 vector<int> bfsOfGraph(int V, vector<int> adj[])
 {
-    vector<int> vis(V, 0);
+    vector<int> vis(V, 0); 
     vector<int> ans;
     bfs(0, vis, adj, ans);
     return ans;

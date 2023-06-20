@@ -5,7 +5,7 @@ using namespace std;
 /**** Does Not Work For Negative Cycle Because of Its Greedy Nature It Will Fall into Infinite Loop ****/
 /*O(E(logV))-->Time Complexity*/
 vector<int> Dijkstra(int V, vector<pll> adj[], int S)
-{
+{ 
     vector<int> dist(V, 1e9);
     priority_queue<pll, vector<pll>, greater<pll>> pq;
     pq.push({0, S});

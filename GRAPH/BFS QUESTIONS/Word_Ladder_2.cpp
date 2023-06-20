@@ -41,7 +41,7 @@ vector<vector<string>> findSequences(string sw, string tw, vector<string> &wl)
                     if (s == tw)
                         anslen = step + 1;
                 }
-            }
+            } 
             s[i] = oldchar;
         }
     }

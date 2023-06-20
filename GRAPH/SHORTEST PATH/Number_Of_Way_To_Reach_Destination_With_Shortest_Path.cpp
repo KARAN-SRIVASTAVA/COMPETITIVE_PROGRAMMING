@@ -43,4 +43,4 @@ int countPaths(int n, vector<vector<int>> &roads)
         }
     }
     return (int)way[n - 1];
-}
+} 

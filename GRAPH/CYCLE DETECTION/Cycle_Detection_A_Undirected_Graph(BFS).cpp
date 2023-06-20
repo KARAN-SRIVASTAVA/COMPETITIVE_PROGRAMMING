@@ -7,7 +7,7 @@ bool isCycle(int V, vector<int> adj[])
     for (int i = 0; i < V; i++)
     {
         if (!vis[i])
-        {
+        { 
             parent[i] = -1;
             vis[i] = 1;
             queue<int> q;

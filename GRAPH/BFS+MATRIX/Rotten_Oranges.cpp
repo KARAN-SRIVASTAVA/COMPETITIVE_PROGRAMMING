@@ -42,7 +42,7 @@ int orangesRotting(vector<vector<int>> &grid)
                 changecnt++;
                 vis[nx][ny] = 1;
                 q.push({{nx, ny}, t + 1});
-            }
+            } 
         }
     }
     if (changecnt != c1)

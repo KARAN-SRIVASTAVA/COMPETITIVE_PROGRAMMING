@@ -37,4 +37,4 @@ int MinimumEffort(vector<vector<int>> &heights)
         }
     }
     return d[n - 1][m - 1];
-}
+} 

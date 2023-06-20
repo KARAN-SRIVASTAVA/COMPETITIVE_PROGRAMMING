@@ -8,7 +8,7 @@ void dfs(int node, vector<int> adj[], vector<int> &vis)
         if (!vis[i])
         {
             dfs(i, adj, vis);
-        }
+        } 
     }
 }
 int numProvinces(vector<vector<int>> adja, int V)

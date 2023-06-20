@@ -7,7 +7,7 @@ void dfs(int x, int y, vector<vector<int>> &vis, vector<vector<char>> &mat)
     int dy[] = {0, 0, 1, -1};
     for (int i = 0; i < 4; i++)
     {
-        int nx = x + dx[i];
+        int nx = x + dx[i]; 
         int ny = y + dy[i];
         if (nx >= 0 && ny >= 0 && nx < vis.size() && ny < vis[0].size() && mat[nx][ny] == 'O' && !vis[nx][ny])
         {

@@ -7,7 +7,7 @@ vector<int> dijkstra(int V, vector<vector<int>> adj[], int S)
     set<pll> s;
     s.insert({0, S});
     dist[S] = 0;
-    while (!s.empty())
+    while (!s.empty()) 
     {
         auto it = *s.begin();
         s.erase(it);

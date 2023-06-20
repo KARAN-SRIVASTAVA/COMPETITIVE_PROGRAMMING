@@ -18,4 +18,4 @@ vector<int> dfsOfGraph(int V, vector<int> adj[])
         if (!vis[i])
             dfs(i, adj, vis, ans);
     return ans;
-}
+} 

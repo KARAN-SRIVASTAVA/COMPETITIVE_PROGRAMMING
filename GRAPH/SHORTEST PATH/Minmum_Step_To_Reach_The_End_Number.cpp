@@ -25,4 +25,4 @@ int minimumMultiplications(vector<int> &arr, int start, int end)
         }
     }
     return -1;
-}
+} 

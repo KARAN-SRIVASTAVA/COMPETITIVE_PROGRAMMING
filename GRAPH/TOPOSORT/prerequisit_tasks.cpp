@@ -26,7 +26,7 @@ vector<int> topoSort(int V, vector<int> adj[])
 			if (indegree[it] == 0)
 				q.push(it);
 		}
-	}
+	} 
 	return toposort;
 }
 bool isPossible(int N, vector<pair<int, int>> &prerequisites)

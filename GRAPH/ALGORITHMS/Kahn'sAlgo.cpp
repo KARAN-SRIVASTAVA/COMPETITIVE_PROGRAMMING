@@ -10,7 +10,7 @@ vector<int> topoSort(int V, vector<int> adj[])
 
 	vector<int> toposort;
 	queue<int> q;
-
+ 
 	for (int i = 0; i < V; i++)
 		if (indegree[i] == 0)
 			q.push(i);

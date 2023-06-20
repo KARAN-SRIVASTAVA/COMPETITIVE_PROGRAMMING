@@ -6,7 +6,7 @@ bool dfs(int node, vector<int> adj[], vector<int> &vis, vector<int> &parent, int
     vis[node] = 1;
     for (auto it : adj[node])
     {
-        if (!vis[it])
+        if (!vis[it]) 
         {
             bool b = dfs(it, adj, vis, parent, node);
             if (b)

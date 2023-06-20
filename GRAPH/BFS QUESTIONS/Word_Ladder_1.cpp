@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int wordLadderLength(string sw, string tw, vector<string> &wl)
-{
+{ 
 
     if (sw == tw)
         return 0;

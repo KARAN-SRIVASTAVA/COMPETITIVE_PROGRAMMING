@@ -11,7 +11,7 @@ int spanningTree(int V, vector<vector<int>> adj[])
         auto it = pq.top();
         pq.pop();
         int wt = it.first;
-        int node = it.second;
+        int node = it.second; 
         if (vis[node])
             continue;
         vis[node] = 1;

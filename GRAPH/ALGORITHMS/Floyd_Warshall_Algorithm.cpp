@@ -10,7 +10,7 @@ using namespace std;
 */
 vector<vector<int>> shortest_distance(vector<vector<int>> &a)
 {
-
+ 
     int n = a.size();
 
     for (int i = 0; i < n; i++)

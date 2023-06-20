@@ -6,7 +6,7 @@ void dfs(int x, int y, vector<vector<char>> &grid, vector<vector<int>> &vis)
     for (int i = -1; i < 2; i++)
     {
         for (int j = -1; j < 2; j++)
-        {
+        { 
             int nx = x + i;
             int ny = y + j;
             if (nx >= 0 && ny >= 0 && nx < vis.size() && ny < vis[0].size() && !vis[nx][ny] && grid[nx][ny] == '1')

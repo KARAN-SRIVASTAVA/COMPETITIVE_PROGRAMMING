@@ -8,7 +8,7 @@ int findCity(int n, int m, vector<vector<int>> &edges, int ThreDis)
         dist[it[0]][it[1]] = it[2];
         dist[it[1]][it[0]] = it[2];
     }
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) 
         dist[i][i] = 0;
 
     for (int via = 0; via < n; via++)

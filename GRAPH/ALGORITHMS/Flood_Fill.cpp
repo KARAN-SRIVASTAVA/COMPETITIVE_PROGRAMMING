@@ -7,7 +7,7 @@ void dfs(int x, int y, vector<vector<int>> &grid, vector<vector<int>> &ans, vect
     int dx[] = {-1, 1, 0, 0};
     int dy[] = {0, 0, -1, 1};
     for (int j = 0; j < 4; j++)
-    {
+    { 
         int nx = x + dx[j];
         int ny = y + dy[j];
         if (nx >= 0 && ny >= 0 && nx < vis.size() && ny < vis[0].size() && !vis[nx][ny] && grid[nx][ny] == oldcol)

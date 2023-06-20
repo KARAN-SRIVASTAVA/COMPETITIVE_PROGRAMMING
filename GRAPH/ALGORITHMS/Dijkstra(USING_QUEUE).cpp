@@ -7,7 +7,7 @@ vector<int> dijkstra(int V, vector<vector<int>> adj[], int S)
     queue<pll> q;
     q.push({0, S});
     dist[S] = 0;
-    while (!q.empty())
+    while (!q.empty()) 
     {
         auto it = q.front();
         q.pop();

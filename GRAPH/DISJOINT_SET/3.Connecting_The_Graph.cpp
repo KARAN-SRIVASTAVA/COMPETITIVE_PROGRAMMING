@@ -74,6 +74,6 @@ int Solve(int n, vector<vector<int>> &edge)
         if (ds.findUpar(i) == i)
             cnt++;
     if (extra < cnt - 1)
-        return -1;
+        return -1; 
     return cnt - 1;
 }

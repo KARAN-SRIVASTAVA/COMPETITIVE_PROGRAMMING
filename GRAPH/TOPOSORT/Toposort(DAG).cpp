@@ -20,4 +20,4 @@ vector<int> topoSort(int V, vector<int> adj[])
 			dfs(i, vis, ans, adj);
 	reverse(ans.begin(), ans.end());
 	return ans;
-}
+} 

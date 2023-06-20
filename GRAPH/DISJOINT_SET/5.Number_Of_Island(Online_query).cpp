@@ -54,7 +54,7 @@ public:
             parent[Upv] = Upu;
             size[Upu] += size[Upv];
         }
-    }
+    } 
 };
 
 vector<int> numOfIslands(int n, int m, vector<vector<int>> &operators)

@@ -18,7 +18,7 @@ vector<vector<int>> nearest(vector<vector<int>> grid)
             }
         }
     }
-    while (!q.empty())
+    while (!q.empty()) 
     {
         auto it = q.front();
         q.pop();

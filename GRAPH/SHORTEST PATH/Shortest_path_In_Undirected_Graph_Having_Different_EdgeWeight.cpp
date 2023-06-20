@@ -33,7 +33,7 @@ vector<int> shortestPath(vector<vector<int>> &edges, int N, int M, int src)
                 q.push(v);
             }
         }
-    }
+    } 
 
     for (int i = 0; i < N; i++)
         if (dist[i] == 1e9)

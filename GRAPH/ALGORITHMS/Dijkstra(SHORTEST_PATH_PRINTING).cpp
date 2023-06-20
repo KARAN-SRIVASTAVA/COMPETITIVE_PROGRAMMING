@@ -4,7 +4,7 @@ vector<int> shortestPath(int n, int m, vector<vector<int>> &edges)
 {
     vector<int> dist(n + 1, 1e9);
     vector<pair<int, int>> adj[n + 1];
-    for (auto it : edges)
+    for (auto it : edges) 
     {
         adj[it[0]].push_back({it[1], it[2]});
         adj[it[1]].push_back({it[0], it[2]});

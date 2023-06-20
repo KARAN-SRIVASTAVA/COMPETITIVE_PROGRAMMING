@@ -11,7 +11,7 @@ public:
         rank.resize(n + 1, 0);
         for (int i = 0; i < n + 1; i++)
             parent[i] = i;
-    }
+    } 
     int findUpar(int node)
     {
         if (node == parent[node])

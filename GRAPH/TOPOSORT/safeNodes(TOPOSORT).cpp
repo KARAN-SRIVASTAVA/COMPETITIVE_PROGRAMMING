@@ -43,4 +43,4 @@ vector<int> eventualSafeNodes(int V, vector<int> adj[])
 	sort(ans.begin(), ans.end());
 
 	return ans;
-}
+} 
